@@ -7,6 +7,7 @@
 #include "core.hpp"
 #include "RenderUtils.hpp"
 #include "callbacks.hpp"
+#include "Particle.hpp"
 
 using namespace physx;
 
@@ -50,10 +51,14 @@ void initPhysics(bool interactive)
 	gScene = gPhysics->createScene(sceneDesc);
 	// ------------------------------------------------------
 	const PxSphereGeometry geo(1);
-	physx::PxTransform* _trans = new PxTransform(1,1,1);
-	Vector4 _color = { 0,255,0,255 };
+	physx::PxShape* s = CreateShape(geo);
+	physx::PxTransform* t = new physx::PxTransform(1, 1, 1);
+	Vector4 c = { 0,255,0,255 };
 
-	RenderItem* particle = new RenderItem(CreateShape(geo), _trans, _color);
+	RenderItem* particle = new RenderItem(s,t,c);
+	
+	physx::PxVec3 v = { 2,0,0 };
+	//particle->transform->p += v;
 	//RegisterRenderItem(particle);
 }
 
