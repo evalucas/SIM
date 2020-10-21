@@ -50,16 +50,18 @@ void initPhysics(bool interactive)
 	sceneDesc.simulationEventCallback = &gContactReportCallback;
 	gScene = gPhysics->createScene(sceneDesc);
 	// ------------------------------------------------------
-	const PxSphereGeometry geo(1);
+	/*const PxSphereGeometry geo(1);
 	physx::PxShape* s = CreateShape(geo);
 	physx::PxTransform* t = new physx::PxTransform(1, 1, 1);
 	Vector4 c = { 0,255,0,255 };
 
 	RenderItem* particle = new RenderItem(s,t,c);
 	
-	physx::PxVec3 v = { 2,0,0 };
+	physx::PxVec3 v = { 2,0,0 };*/
 	//particle->transform->p += v;
 	//RegisterRenderItem(particle);
+
+	Particle* p = new Particle();
 }
 
 
