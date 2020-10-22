@@ -11,20 +11,23 @@
 
 using namespace physx;
 
-PxDefaultAllocator		gAllocator;
-PxDefaultErrorCallback	gErrorCallback;
+PxDefaultAllocator			gAllocator;
+PxDefaultErrorCallback		gErrorCallback;
 
-PxFoundation*			gFoundation = NULL;
-PxPhysics*				gPhysics	= NULL;
+PxFoundation*				gFoundation = NULL;
+PxPhysics*					gPhysics = NULL;
 
 
-PxMaterial*				gMaterial	= NULL;
+PxMaterial*					gMaterial = NULL;
 
-PxPvd*                  gPvd        = NULL;
+PxPvd*						gPvd = NULL;
 
-PxDefaultCpuDispatcher*	gDispatcher = NULL;
-PxScene*				gScene      = NULL;
-ContactReportCallback gContactReportCallback;
+PxDefaultCpuDispatcher*		gDispatcher = NULL;
+PxScene*					gScene = NULL;
+ContactReportCallback		gContactReportCallback;
+
+Particle*					p = NULL;
+std::vector<Particle*>		vP;
 
 // Initialize physics engine
 void initPhysics(bool interactive)
@@ -35,9 +38,9 @@ void initPhysics(bool interactive)
 
 	gPvd = PxCreatePvd(*gFoundation);
 	PxPvdTransport* transport = PxDefaultPvdSocketTransportCreate(PVD_HOST, 5425, 10);
-	gPvd->connect(*transport,PxPvdInstrumentationFlag::eALL);
+	gPvd->connect(*transport, PxPvdInstrumentationFlag::eALL);
 
-	gPhysics = PxCreatePhysics(PX_PHYSICS_VERSION, *gFoundation, PxTolerancesScale(),true,gPvd);
+	gPhysics = PxCreatePhysics(PX_PHYSICS_VERSION, *gFoundation, PxTolerancesScale(), true, gPvd);
 
 	gMaterial = gPhysics->createMaterial(0.5f, 0.5f, 0.6f);
 
@@ -49,19 +52,23 @@ void initPhysics(bool interactive)
 	sceneDesc.filterShader = contactReportFilterShader;
 	sceneDesc.simulationEventCallback = &gContactReportCallback;
 	gScene = gPhysics->createScene(sceneDesc);
+	
 	// ------------------------------------------------------
+	
 	/*const PxSphereGeometry geo(1);
 	physx::PxShape* s = CreateShape(geo);
 	physx::PxTransform* t = new physx::PxTransform(1, 1, 1);
 	Vector4 c = { 0,255,0,255 };
 
-	RenderItem* particle = new RenderItem(s,t,c);
-	
-	physx::PxVec3 v = { 2,0,0 };*/
-	//particle->transform->p += v;
-	//RegisterRenderItem(particle);
+	RenderItem* particle = new RenderItem(s, t, c);*/
 
-	Particle* p = new Particle();
+	//EJ2
+	//physx::PxVec3 v = { 0,1,0 };
+	//physx::PxVec3 a = { 0,0,0 };
+	//EJ3
+	//physx::PxVec3 v = { 0,5,0 };
+	//physx::PxVec3 a = { 0,15,0 };
+	//p = new Particle(t, v, a, 0.995, 0.9);
 }
 
 
@@ -74,6 +81,9 @@ void stepPhysics(bool interactive, double t)
 
 	gScene->simulate(t);
 	gScene->fetchResults(true);
+	for (int i = 0; i < vP.size(); i++) {
+		vP[i]->integrate(t);
+	}
 }
 
 // Function to clean data
@@ -86,11 +96,11 @@ void cleanupPhysics(bool interactive)
 	gScene->release();
 	gDispatcher->release();
 	// -----------------------------------------------------
-	gPhysics->release();	
+	gPhysics->release();
 	PxPvdTransport* transport = gPvd->getTransport();
 	gPvd->release();
 	transport->release();
-	
+
 	gFoundation->release();
 }
 
@@ -99,12 +109,22 @@ void keyPress(unsigned char key, const PxTransform& camera)
 {
 	PX_UNUSED(camera);
 
-	switch(toupper(key))
-	{
-	//case 'B': break;
-	//case ' ':	break;
+	switch (toupper(key))
+	{ 
+		//case 'B': break;
+		//case ' ':	break;
 	case ' ':
 	{
+		//EJ4
+		const PxSphereGeometry geo(1);
+		physx::PxShape* s = CreateShape(geo);
+		physx::PxTransform* t = new physx::PxTransform(1, 1, 1);
+		Vector4 c = { 0,255,0,255 };
+		*t = camera;
+		RenderItem* particle = new RenderItem(s, t, c);
+		
+		p = new Particle(t, GetCamera()->getDir()*10, { 0,0,0 }, 0.995, 0.9);
+		vP.push_back(p);
 		break;
 	}
 	default:
@@ -119,7 +139,7 @@ void onCollision(physx::PxActor* actor1, physx::PxActor* actor2)
 }
 
 
-int main(int, const char*const*)
+int main(int, const char* const*)
 {
 #ifndef OFFLINE_EXECUTION 
 	extern void renderLoop();
@@ -127,7 +147,7 @@ int main(int, const char*const*)
 #else
 	static const PxU32 frameCount = 100;
 	initPhysics(false);
-	for(PxU32 i=0; i<frameCount; i++)
+	for (PxU32 i = 0; i < frameCount; i++)
 		stepPhysics(false);
 	cleanupPhysics(false);
 #endif

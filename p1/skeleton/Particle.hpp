@@ -14,11 +14,13 @@ private:
 	Vector3 a;
 
 	float damping;
-
 	float inverse_mass;
+	physx::PxTransform* tr = nullptr;
+	
 public:
 	void integrate(float t);
-	Particle();
+	Particle(physx::PxTransform* T, Vector3 V, Vector3 A, float d,float inv)
+		:tr(T), v(V), a(A), damping(d), inverse_mass(inv) {};
 };
 
 
