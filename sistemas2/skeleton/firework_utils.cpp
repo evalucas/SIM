@@ -1,5 +1,6 @@
+#pragma once
 #include "firework_utils.hpp"
-#include "random.cpp"
+#include "random.hpp"
 const Vector3 GRAVITY(0.0f, -10.0f, 0.0f);
 
 std::vector<Firework*> fireworks;
@@ -26,6 +27,8 @@ void FireworkRule::create(Firework* firework, const Firework* parent) {
 	}
 
 	vel += randomv(minVelocity, maxVelocity);
+	//vel += maxVelocity;
+
 	firework->setVelocity(vel);
 
 	firework->setMass(1);

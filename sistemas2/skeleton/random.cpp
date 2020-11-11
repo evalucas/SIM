@@ -1,6 +1,12 @@
+#pragma once
+
+#define NOMINMAX
+
 #include "random.hpp"
 #include "core.hpp"
 #include <algorithm>
+#include <cmath>
+#include "windows.h"
 
 float randomf(float _min, float _max) {
 
@@ -13,8 +19,8 @@ float randomf(float _min, float _max) {
 
 Vector3 randomv(const Vector3& _min, const Vector3& _max) {
 	Vector3 res;
-	res.x = randomf(std::min(_min.x, _max.x), std::max(_min.x, _max.x));
-	res.y = randomf(std::min(_min.y, _max.y), std::max(_min.y, _max.y));
-	res.z = randomf(std::min(_min.z, _max.z), std::max(_min.z, _max.z));
+	res.x = randomf((std::min)(_min.x, _max.x), (std::max)(_min.x, _max.x));
+	res.y = randomf((std::min)(_min.y, _max.y), (std::max)(_min.y, _max.y));
+	res.z = randomf((std::min)(_min.z, _max.z), (std::max)(_min.z, _max.z));
 	return res;
 }

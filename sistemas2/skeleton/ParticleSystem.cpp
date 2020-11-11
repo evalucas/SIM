@@ -1,6 +1,9 @@
+#pragma once
+
 #include "ParticleSystem.hpp"
 #include "Particle.hpp"
 #include "core.hpp"
+#include "random.hpp"
 
 extern void AddParticle(Particle* particle);
 ParticleSystem::ParticleSystem() : time_for_next_particle(0.0f)
@@ -67,14 +70,6 @@ physx::PxQuat getRotationTo(const Vector3& src, const Vector3& dst) {
 	return q;
 }
 
-float randomf(float _min, float _max) {
-
-	float r = static_cast<float>(std::rand()) / RAND_MAX;
-	r *= (_max - _min);
-	r += _min;
-
-	return r;
-}
 
 void ParticleSystem::createNewParticle()
 {

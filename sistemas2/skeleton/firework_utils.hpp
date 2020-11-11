@@ -1,5 +1,6 @@
 #ifndef _FIREWORK_UTILS_H_
 #define _FIREWORK_UTILS_H_
+#pragma once
 
 #include "core.hpp"
 #include <vector>
