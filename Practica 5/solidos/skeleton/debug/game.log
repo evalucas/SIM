@@ -1,0 +1,12 @@
+﻿  main.cpp
+D:\UNI\SIM\SIM\Practica 5\solidos\common\PhysX-3.4\PxShared\include\task\PxTask.h(329,1): warning C5220: "physx::PxLightCpuTask::mRefCount": un miembro de datos no estático con un tipo calificado volátil ya no implica
+           que los constructores de copia/movimiento generados por el compilador y los operadores de asignación de copia o movimiento no sean triviales
+D:\UNI\SIM\SIM\Practica 5\solidos\common\PhysX-3.4\PxShared\include\task\PxTask.h(326): message : vea la declaración de 'physx::PxLightCpuTask::mRefCount'
+D:\UNI\SIM\SIM\Practica 5\solidos\skeleton\force_generator.hpp(9,1): warning C5204: "BodyForceGenerator": la clase tiene funciones virtuales, pero su destructor trivial no es virtual; puede que las instancias de objetos derivados de esta clase no se destruyan correctamente
+D:\UNI\SIM\SIM\Practica 5\solidos\skeleton\wind.hpp(18,1): warning C5204: "ParticleWind": la clase tiene funciones virtuales, pero su destructor trivial no es virtual; puede que las instancias de objetos derivados de esta clase no se destruyan correctamente
+D:\UNI\SIM\SIM\Practica 5\solidos\skeleton\explosion.hpp(17,1): warning C5204: "BodyExplosion": la clase tiene funciones virtuales, pero su destructor trivial no es virtual; puede que las instancias de objetos derivados de esta clase no se destruyan correctamente
+D:\UNI\SIM\SIM\Practica 5\solidos\skeleton\main.cpp(60,28): warning C4100: 'particle': parámetro formal sin referencia
+D:\UNI\SIM\SIM\Practica 5\solidos\skeleton\main.cpp(84,31): warning C4459: la declaración de 'ballRenderItem' oculta la declaración global
+D:\UNI\SIM\SIM\Practica 5\solidos\skeleton\main.cpp(55,17): message : vea la declaración de 'ballRenderItem'
+D:\UNI\SIM\SIM\Practica 5\solidos\skeleton\main.cpp(84,14): warning C4189: 'ballRenderItem': la variable local se ha inicializado pero no se hace referencia a ella
+  game.vcxproj -> D:\UNI\SIM\SIM\Practica 5\solidos\bin\gameDEBUG.exe

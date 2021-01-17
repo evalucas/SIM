@@ -1,0 +1,8 @@
+﻿  ParticleSystem.cpp
+D:\UNI\SIM\SIM\Practica 2\sistemas1\common\PhysX-3.4\PxShared\include\task\PxTask.h(329,1): warning C5220: "physx::PxLightCpuTask::mRefCount": un miembro de datos no estático con un tipo calificado volátil ya no implica
+           que los constructores de copia/movimiento generados por el compilador y los operadores de asignación de copia o movimiento no sean triviales
+D:\UNI\SIM\SIM\Practica 2\sistemas1\common\PhysX-3.4\PxShared\include\task\PxTask.h(326): message : vea la declaración de 'physx::PxLightCpuTask::mRefCount'
+D:\UNI\SIM\SIM\Practica 2\sistemas1\skeleton\ParticleSystem.cpp(60): warning C5045: El compilador insertará la mitigación de Spectre para la carga de memoria si se especificó el modificador /Qspectre
+  D:\UNI\SIM\SIM\Practica 2\sistemas1\skeleton\ParticleSystem.cpp(53) : nota: el intervalo "" del índice se comprobó por comparación en esta línea
+  D:\UNI\SIM\SIM\Practica 2\sistemas1\skeleton\ParticleSystem.cpp(60) : nota: suministra la llamada en esta línea
+  game.vcxproj -> D:\UNI\SIM\SIM\Practica 2\sistemas1\bin\gameDEBUG.exe

@@ -1,0 +1,32 @@
+﻿  Render.cpp
+D:\UNI\SIM\SIM\Practica 2\sistemas2\common\PhysX-3.4\PxShared\include\task\PxTask.h(329,1): warning C5220: "physx::PxLightCpuTask::mRefCount": un miembro de datos no estático con un tipo calificado volátil ya no implica
+           que los constructores de copia/movimiento generados por el compilador y los operadores de asignación de copia o movimiento no sean triviales
+D:\UNI\SIM\SIM\Practica 2\sistemas2\common\PhysX-3.4\PxShared\include\task\PxTask.h(326): message : vea la declaración de 'physx::PxLightCpuTask::mRefCount'
+D:\UNI\SIM\SIM\Practica 2\sistemas2\skeleton\Render\Render.cpp(151): warning C5045: El compilador insertará la mitigación de Spectre para la carga de memoria si se especificó el modificador /Qspectre
+  D:\UNI\SIM\SIM\Practica 2\sistemas2\skeleton\Render\Render.cpp(144) : nota: el intervalo "" del índice se comprobó por comparación en esta línea
+  D:\UNI\SIM\SIM\Practica 2\sistemas2\skeleton\Render\Render.cpp(151) : nota: suministra la llamada en esta línea
+D:\UNI\SIM\SIM\Practica 2\sistemas2\skeleton\Render\Render.cpp(136): warning C5045: El compilador insertará la mitigación de Spectre para la carga de memoria si se especificó el modificador /Qspectre
+  D:\UNI\SIM\SIM\Practica 2\sistemas2\skeleton\Render\Render.cpp(121) : nota: el intervalo "nbPolys" del índice se comprobó por comparación en esta línea
+  D:\UNI\SIM\SIM\Practica 2\sistemas2\skeleton\Render\Render.cpp(136) : nota: suministra la llamada en esta línea
+D:\UNI\SIM\SIM\Practica 2\sistemas2\skeleton\Render\Render.cpp(124): warning C5045: El compilador insertará la mitigación de Spectre para la carga de memoria si se especificó el modificador /Qspectre
+  D:\UNI\SIM\SIM\Practica 2\sistemas2\skeleton\Render\Render.cpp(121) : nota: el intervalo "nbPolys" del índice se comprobó por comparación en esta línea
+  D:\UNI\SIM\SIM\Practica 2\sistemas2\skeleton\Render\Render.cpp(124) : nota: suministra la carga de memoria en esta línea
+D:\UNI\SIM\SIM\Practica 2\sistemas2\skeleton\Render\Render.cpp(208): warning C5045: El compilador insertará la mitigación de Spectre para la carga de memoria si se especificó el modificador /Qspectre
+  D:\UNI\SIM\SIM\Practica 2\sistemas2\skeleton\Render\Render.cpp(201) : nota: el intervalo "" del índice se comprobó por comparación en esta línea
+  D:\UNI\SIM\SIM\Practica 2\sistemas2\skeleton\Render\Render.cpp(208) : nota: suministra la llamada en esta línea
+D:\UNI\SIM\SIM\Practica 2\sistemas2\skeleton\Render\Render.cpp(195): warning C5045: El compilador insertará la mitigación de Spectre para la carga de memoria si se especificó el modificador /Qspectre
+  D:\UNI\SIM\SIM\Practica 2\sistemas2\skeleton\Render\Render.cpp(181) : nota: el intervalo "triangleCount" del índice se comprobó por comparación en esta línea
+  D:\UNI\SIM\SIM\Practica 2\sistemas2\skeleton\Render\Render.cpp(195) : nota: suministra la llamada en esta línea
+D:\UNI\SIM\SIM\Practica 2\sistemas2\skeleton\Render\Render.cpp(189): warning C5045: El compilador insertará la mitigación de Spectre para la carga de memoria si se especificó el modificador /Qspectre
+  D:\UNI\SIM\SIM\Practica 2\sistemas2\skeleton\Render\Render.cpp(181) : nota: el intervalo "triangleCount" del índice se comprobó por comparación en esta línea
+  D:\UNI\SIM\SIM\Practica 2\sistemas2\skeleton\Render\Render.cpp(189) : nota: suministra la llamada en esta línea
+D:\UNI\SIM\SIM\Practica 2\sistemas2\skeleton\Render\Render.cpp(341): warning C5045: El compilador insertará la mitigación de Spectre para la carga de memoria si se especificó el modificador /Qspectre
+  D:\UNI\SIM\SIM\Practica 2\sistemas2\skeleton\Render\Render.cpp(336) : nota: el intervalo "j" del índice se comprobó por comparación en esta línea
+  D:\UNI\SIM\SIM\Practica 2\sistemas2\skeleton\Render\Render.cpp(341) : nota: suministra la llamada en esta línea
+D:\UNI\SIM\SIM\Practica 2\sistemas2\skeleton\Render\Render.cpp(334): warning C5045: El compilador insertará la mitigación de Spectre para la carga de memoria si se especificó el modificador /Qspectre
+  D:\UNI\SIM\SIM\Practica 2\sistemas2\skeleton\Render\Render.cpp(329) : nota: el intervalo "i" del índice se comprobó por comparación en esta línea
+  D:\UNI\SIM\SIM\Practica 2\sistemas2\skeleton\Render\Render.cpp(334) : nota: suministra la carga de memoria en esta línea
+D:\UNI\SIM\SIM\Practica 2\sistemas2\common\PhysX-3.4\PxShared\include\foundation\PxVec3.h(303): warning C5045: El compilador insertará la mitigación de Spectre para la carga de memoria si se especificó el modificador /Qspectre
+  D:\UNI\SIM\SIM\Practica 2\sistemas2\common\PhysX-3.4\PxShared\include\foundation\PxVec3.h(302) : nota: el intervalo "m" del índice se comprobó por comparación en esta línea
+  D:\UNI\SIM\SIM\Practica 2\sistemas2\common\PhysX-3.4\PxShared\include\foundation\PxVec3.h(303) : nota: suministra la llamada en esta línea
+  game.vcxproj -> D:\UNI\SIM\SIM\Practica 2\sistemas2\bin\gameDEBUG.exe

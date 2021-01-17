@@ -1,0 +1,7 @@
+﻿  force_registry.cpp
+D:\UNI\SIM\SIM\Practica 3\fuerzas3\skeleton\force_generator.hpp(9,1): warning C5204: "ParticleForceGenerator": la clase tiene funciones virtuales, pero su destructor trivial no es virtual; puede que las instancias de objetos derivados de esta clase no se destruyan correctamente
+D:\UNI\SIM\SIM\Practica 3\fuerzas3\common\PhysX-3.4\PxShared\include\task\PxTask.h(329,1): warning C5220: "physx::PxLightCpuTask::mRefCount": un miembro de datos no estático con un tipo calificado volátil ya no implica
+           que los constructores de copia/movimiento generados por el compilador y los operadores de asignación de copia o movimiento no sean triviales
+D:\UNI\SIM\SIM\Practica 3\fuerzas3\common\PhysX-3.4\PxShared\include\task\PxTask.h(326): message : vea la declaración de 'physx::PxLightCpuTask::mRefCount'
+D:\UNI\SIM\SIM\Practica 3\fuerzas3\skeleton\gravity.hpp(15,1): warning C5204: "ParticleGravity": la clase tiene funciones virtuales, pero su destructor trivial no es virtual; puede que las instancias de objetos derivados de esta clase no se destruyan correctamente
+  game.vcxproj -> D:\UNI\SIM\SIM\Practica 3\fuerzas3\bin\gameDEBUG.exe

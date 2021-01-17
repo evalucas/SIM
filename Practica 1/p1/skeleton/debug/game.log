@@ -1,0 +1,64 @@
+﻿  callbacks.cpp
+  main.cpp
+  Particle.cpp
+  RenderUtils.cpp
+  Camera.cpp
+  Render.cpp
+D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Camera.cpp(88,19): warning C5219: conversión implícita de "int" a "float"; posible pérdida de datos
+D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Camera.cpp(90,19): warning C5219: conversión implícita de "int" a "float"; posible pérdida de datos
+D:\UNI\SIM\SIM\Practica 1\p1\common\PhysX-3.4\PxShared\include\foundation\PxVec3.h(293): warning C5045: El compilador insertará la mitigación de Spectre para la carga de memoria si se especificó el modificador /Qspectre
+  D:\UNI\SIM\SIM\Practica 1\p1\common\PhysX-3.4\PxShared\include\foundation\PxVec3.h(293) : nota: el intervalo "m" del índice se comprobó por comparación en esta línea
+  D:\UNI\SIM\SIM\Practica 1\p1\common\PhysX-3.4\PxShared\include\foundation\PxVec3.h(293) : nota: suministra la llamada en esta línea
+D:\UNI\SIM\SIM\Practica 1\p1\common\PhysX-3.4\PxShared\include\foundation\PxVec3.h(303): warning C5045: El compilador insertará la mitigación de Spectre para la carga de memoria si se especificó el modificador /Qspectre
+  D:\UNI\SIM\SIM\Practica 1\p1\common\PhysX-3.4\PxShared\include\foundation\PxVec3.h(302) : nota: el intervalo "m" del índice se comprobó por comparación en esta línea
+  D:\UNI\SIM\SIM\Practica 1\p1\common\PhysX-3.4\PxShared\include\foundation\PxVec3.h(303) : nota: suministra la llamada en esta línea
+D:\UNI\SIM\SIM\Practica 1\p1\common\PhysX-3.4\PxShared\include\task\PxTask.h(329,1): warning C5220: "physx::PxLightCpuTask::mRefCount": un miembro de datos no estático con un tipo calificado volátil ya no implica
+           que los constructores de copia/movimiento generados por el compilador y los operadores de asignación de copia o movimiento no sean triviales (compilando archivo de origen callbacks.cpp)
+D:\UNI\SIM\SIM\Practica 1\p1\common\PhysX-3.4\PxShared\include\task\PxTask.h(326): message : vea la declaración de 'physx::PxLightCpuTask::mRefCount' (compilando archivo de origen callbacks.cpp)
+D:\UNI\SIM\SIM\Practica 1\p1\common\PhysX-3.4\PxShared\include\task\PxTask.h(329,1): warning C5220: "physx::PxLightCpuTask::mRefCount": un miembro de datos no estático con un tipo calificado volátil ya no implica
+           que los constructores de copia/movimiento generados por el compilador y los operadores de asignación de copia o movimiento no sean triviales (compilando archivo de origen main.cpp)
+D:\UNI\SIM\SIM\Practica 1\p1\common\PhysX-3.4\PxShared\include\task\PxTask.h(326): message : vea la declaración de 'physx::PxLightCpuTask::mRefCount' (compilando archivo de origen main.cpp)
+D:\UNI\SIM\SIM\Practica 1\p1\common\PhysX-3.4\PxShared\include\task\PxTask.h(329,1): warning C5220: "physx::PxLightCpuTask::mRefCount": un miembro de datos no estático con un tipo calificado volátil ya no implica
+           que los constructores de copia/movimiento generados por el compilador y los operadores de asignación de copia o movimiento no sean triviales (compilando archivo de origen Particle.cpp)
+D:\UNI\SIM\SIM\Practica 1\p1\common\PhysX-3.4\PxShared\include\task\PxTask.h(326): message : vea la declaración de 'physx::PxLightCpuTask::mRefCount' (compilando archivo de origen Particle.cpp)
+D:\UNI\SIM\SIM\Practica 1\p1\common\PhysX-3.4\PxShared\include\task\PxTask.h(329,1): warning C5220: "physx::PxLightCpuTask::mRefCount": un miembro de datos no estático con un tipo calificado volátil ya no implica
+           que los constructores de copia/movimiento generados por el compilador y los operadores de asignación de copia o movimiento no sean triviales (compilando archivo de origen Render\Render.cpp)
+D:\UNI\SIM\SIM\Practica 1\p1\common\PhysX-3.4\PxShared\include\task\PxTask.h(326): message : vea la declaración de 'physx::PxLightCpuTask::mRefCount' (compilando archivo de origen Render\Render.cpp)
+D:\UNI\SIM\SIM\Practica 1\p1\common\PhysX-3.4\PxShared\include\task\PxTask.h(329,1): warning C5220: "physx::PxLightCpuTask::mRefCount": un miembro de datos no estático con un tipo calificado volátil ya no implica
+           que los constructores de copia/movimiento generados por el compilador y los operadores de asignación de copia o movimiento no sean triviales (compilando archivo de origen RenderUtils.cpp)
+D:\UNI\SIM\SIM\Practica 1\p1\common\PhysX-3.4\PxShared\include\task\PxTask.h(326): message : vea la declaración de 'physx::PxLightCpuTask::mRefCount' (compilando archivo de origen RenderUtils.cpp)
+D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Particle.hpp(23,4): warning C5038: miembro de datos "Particle::tr" se inicializará después de miembro de datos "Particle::v" (compilando archivo de origen main.cpp)
+D:\UNI\SIM\SIM\Practica 1\p1\skeleton\main.cpp(84,20): warning C4388: '<': no coinciden signed/unsigned
+D:\UNI\SIM\SIM\Practica 1\p1\skeleton\main.cpp(124,15): warning C4189: 'particle': la variable local se ha inicializado pero no se hace referencia a ella
+D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Particle.hpp(23,4): warning C5038: miembro de datos "Particle::tr" se inicializará después de miembro de datos "Particle::v" (compilando archivo de origen Particle.cpp)
+D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Render.cpp(151): warning C5045: El compilador insertará la mitigación de Spectre para la carga de memoria si se especificó el modificador /Qspectre
+  D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Render.cpp(144) : nota: el intervalo "" del índice se comprobó por comparación en esta línea
+  D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Render.cpp(151) : nota: suministra la llamada en esta línea
+D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Render.cpp(136): warning C5045: El compilador insertará la mitigación de Spectre para la carga de memoria si se especificó el modificador /Qspectre
+  D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Render.cpp(121) : nota: el intervalo "nbPolys" del índice se comprobó por comparación en esta línea
+  D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Render.cpp(136) : nota: suministra la llamada en esta línea
+D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Render.cpp(124): warning C5045: El compilador insertará la mitigación de Spectre para la carga de memoria si se especificó el modificador /Qspectre
+  D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Render.cpp(121) : nota: el intervalo "nbPolys" del índice se comprobó por comparación en esta línea
+  D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Render.cpp(124) : nota: suministra la carga de memoria en esta línea
+D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Render.cpp(208): warning C5045: El compilador insertará la mitigación de Spectre para la carga de memoria si se especificó el modificador /Qspectre
+  D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Render.cpp(201) : nota: el intervalo "" del índice se comprobó por comparación en esta línea
+  D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Render.cpp(208) : nota: suministra la llamada en esta línea
+D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Render.cpp(195): warning C5045: El compilador insertará la mitigación de Spectre para la carga de memoria si se especificó el modificador /Qspectre
+  D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Render.cpp(181) : nota: el intervalo "triangleCount" del índice se comprobó por comparación en esta línea
+  D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Render.cpp(195) : nota: suministra la llamada en esta línea
+D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Render.cpp(189): warning C5045: El compilador insertará la mitigación de Spectre para la carga de memoria si se especificó el modificador /Qspectre
+  D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Render.cpp(181) : nota: el intervalo "triangleCount" del índice se comprobó por comparación en esta línea
+  D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Render.cpp(189) : nota: suministra la llamada en esta línea
+D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Render.cpp(341): warning C5045: El compilador insertará la mitigación de Spectre para la carga de memoria si se especificó el modificador /Qspectre
+  D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Render.cpp(336) : nota: el intervalo "j" del índice se comprobó por comparación en esta línea
+  D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Render.cpp(341) : nota: suministra la llamada en esta línea
+D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Render.cpp(334): warning C5045: El compilador insertará la mitigación de Spectre para la carga de memoria si se especificó el modificador /Qspectre
+  D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Render.cpp(329) : nota: el intervalo "i" del índice se comprobó por comparación en esta línea
+  D:\UNI\SIM\SIM\Practica 1\p1\skeleton\Render\Render.cpp(334) : nota: suministra la carga de memoria en esta línea
+D:\UNI\SIM\SIM\Practica 1\p1\common\PhysX-3.4\PxShared\include\foundation\PxVec3.h(303): warning C5045: El compilador insertará la mitigación de Spectre para la carga de memoria si se especificó el modificador /Qspectre
+  D:\UNI\SIM\SIM\Practica 1\p1\common\PhysX-3.4\PxShared\include\foundation\PxVec3.h(302) : nota: el intervalo "m" del índice se comprobó por comparación en esta línea
+  D:\UNI\SIM\SIM\Practica 1\p1\common\PhysX-3.4\PxShared\include\foundation\PxVec3.h(303) : nota: suministra la llamada en esta línea
+D:\UNI\SIM\SIM\Practica 1\p1\skeleton\main.cpp(85): warning C5045: El compilador insertará la mitigación de Spectre para la carga de memoria si se especificó el modificador /Qspectre
+  D:\UNI\SIM\SIM\Practica 1\p1\skeleton\main.cpp(84) : nota: el intervalo "" del índice se comprobó por comparación en esta línea
+  D:\UNI\SIM\SIM\Practica 1\p1\skeleton\main.cpp(85) : nota: suministra la llamada en esta línea
+  game.vcxproj -> D:\UNI\SIM\SIM\Practica 1\p1\bin\gameDEBUG.exe

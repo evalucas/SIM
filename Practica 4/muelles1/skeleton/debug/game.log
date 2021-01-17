@@ -1,0 +1,11 @@
+﻿  main.cpp
+D:\UNI\SIM\SIM\Practica 4\muelles1\common\PhysX-3.4\PxShared\include\task\PxTask.h(329,1): warning C5220: "physx::PxLightCpuTask::mRefCount": un miembro de datos no estático con un tipo calificado volátil ya no implica
+           que los constructores de copia/movimiento generados por el compilador y los operadores de asignación de copia o movimiento no sean triviales
+D:\UNI\SIM\SIM\Practica 4\muelles1\common\PhysX-3.4\PxShared\include\task\PxTask.h(326): message : vea la declaración de 'physx::PxLightCpuTask::mRefCount'
+D:\UNI\SIM\SIM\Practica 4\muelles1\skeleton\force_generator.hpp(9,1): warning C5204: "ParticleForceGenerator": la clase tiene funciones virtuales, pero su destructor trivial no es virtual; puede que las instancias de objetos derivados de esta clase no se destruyan correctamente
+D:\UNI\SIM\SIM\Practica 4\muelles1\skeleton\gravity.hpp(15,1): warning C5204: "ParticleGravity": la clase tiene funciones virtuales, pero su destructor trivial no es virtual; puede que las instancias de objetos derivados de esta clase no se destruyan correctamente
+D:\UNI\SIM\SIM\Practica 4\muelles1\skeleton\wind.hpp(18,1): warning C5204: "ParticleWind": la clase tiene funciones virtuales, pero su destructor trivial no es virtual; puede que las instancias de objetos derivados de esta clase no se destruyan correctamente
+D:\UNI\SIM\SIM\Practica 4\muelles1\skeleton\explosion.hpp(17,1): warning C5204: "ParticleExplosion": la clase tiene funciones virtuales, pero su destructor trivial no es virtual; puede que las instancias de objetos derivados de esta clase no se destruyan correctamente
+D:\UNI\SIM\SIM\Practica 4\muelles1\skeleton\main.cpp(183,12): warning C5205: la eliminación de una clase abstracta "ParticleWind" que tiene un destructor no virtual produce un comportamiento no definido
+D:\UNI\SIM\SIM\Practica 4\muelles1\skeleton\wind.hpp(7): message : vea la declaración de 'ParticleWind'
+  game.vcxproj -> D:\UNI\SIM\SIM\Practica 4\muelles1\bin\gameDEBUG.exe

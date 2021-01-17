@@ -1,0 +1,38 @@
+﻿  Particle.cpp
+  main.cpp
+  rigidBody.cpp
+  wind.cpp
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\common\PhysX-3.4\PxShared\include\task\PxTask.h(329,1): warning C5220: "physx::PxLightCpuTask::mRefCount": un miembro de datos no estático con un tipo calificado volátil ya no implica
+           que los constructores de copia/movimiento generados por el compilador y los operadores de asignación de copia o movimiento no sean triviales (compilando archivo de origen wind.cpp)
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\common\PhysX-3.4\PxShared\include\task\PxTask.h(326): message : vea la declaración de 'physx::PxLightCpuTask::mRefCount' (compilando archivo de origen wind.cpp)
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\common\PhysX-3.4\PxShared\include\task\PxTask.h(329,1): warning C5220: "physx::PxLightCpuTask::mRefCount": un miembro de datos no estático con un tipo calificado volátil ya no implica
+           que los constructores de copia/movimiento generados por el compilador y los operadores de asignación de copia o movimiento no sean triviales (compilando archivo de origen main.cpp)
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\common\PhysX-3.4\PxShared\include\task\PxTask.h(326): message : vea la declaración de 'physx::PxLightCpuTask::mRefCount' (compilando archivo de origen main.cpp)
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\common\PhysX-3.4\PxShared\include\task\PxTask.h(329,1): warning C5220: "physx::PxLightCpuTask::mRefCount": un miembro de datos no estático con un tipo calificado volátil ya no implica
+           que los constructores de copia/movimiento generados por el compilador y los operadores de asignación de copia o movimiento no sean triviales (compilando archivo de origen Particle.cpp)
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\common\PhysX-3.4\PxShared\include\task\PxTask.h(326): message : vea la declaración de 'physx::PxLightCpuTask::mRefCount' (compilando archivo de origen Particle.cpp)
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\common\PhysX-3.4\PxShared\include\task\PxTask.h(329,1): warning C5220: "physx::PxLightCpuTask::mRefCount": un miembro de datos no estático con un tipo calificado volátil ya no implica
+           que los constructores de copia/movimiento generados por el compilador y los operadores de asignación de copia o movimiento no sean triviales (compilando archivo de origen rigidBody.cpp)
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\common\PhysX-3.4\PxShared\include\task\PxTask.h(326): message : vea la declaración de 'physx::PxLightCpuTask::mRefCount' (compilando archivo de origen rigidBody.cpp)
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\skeleton\force_generator.hpp(12,1): warning C5204: "ParticleForceGenerator": la clase tiene funciones virtuales, pero su destructor trivial no es virtual; puede que las instancias de objetos derivados de esta clase no se destruyan correctamente (compilando archivo de origen wind.cpp)
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\skeleton\force_generator.hpp(11,29): warning C4100: 't': parámetro formal sin referencia (compilando archivo de origen wind.cpp)
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\skeleton\physicsobject.h(23,40): warning C4100: 't': parámetro formal sin referencia (compilando archivo de origen Particle.cpp)
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\skeleton\physicsobject.h(55,31): warning C4100: 't': parámetro formal sin referencia (compilando archivo de origen Particle.cpp)
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\skeleton\physicsobject.h(23,40): warning C4100: 't': parámetro formal sin referencia (compilando archivo de origen main.cpp)
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\skeleton\physicsobject.h(55,31): warning C4100: 't': parámetro formal sin referencia (compilando archivo de origen main.cpp)
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\skeleton\force_generator.hpp(12,1): warning C5204: "ParticleForceGenerator": la clase tiene funciones virtuales, pero su destructor trivial no es virtual; puede que las instancias de objetos derivados de esta clase no se destruyan correctamente (compilando archivo de origen main.cpp)
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\skeleton\force_generator.hpp(11,29): warning C4100: 't': parámetro formal sin referencia (compilando archivo de origen main.cpp)
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\skeleton\gravity.hpp(15,1): warning C5204: "ParticleGravity": la clase tiene funciones virtuales, pero su destructor trivial no es virtual; puede que las instancias de objetos derivados de esta clase no se destruyan correctamente (compilando archivo de origen main.cpp)
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\skeleton\wind.hpp(18,1): warning C5204: "ParticleWind": la clase tiene funciones virtuales, pero su destructor trivial no es virtual; puede que las instancias de objetos derivados de esta clase no se destruyan correctamente (compilando archivo de origen main.cpp)
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\skeleton\explosion.hpp(17,1): warning C5204: "ParticleExplosion": la clase tiene funciones virtuales, pero su destructor trivial no es virtual; puede que las instancias de objetos derivados de esta clase no se destruyan correctamente (compilando archivo de origen main.cpp)
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\skeleton\main.cpp(147,14): warning C4189: 'floorRenderItem': la variable local se ha inicializado pero no se hace referencia a ella
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\skeleton\physicsobject.h(23,40): warning C4100: 't': parámetro formal sin referencia (compilando archivo de origen rigidBody.cpp)
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\skeleton\physicsobject.h(55,31): warning C4100: 't': parámetro formal sin referencia (compilando archivo de origen rigidBody.cpp)
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\skeleton\wind.hpp(18,1): warning C5204: "ParticleWind": la clase tiene funciones virtuales, pero su destructor trivial no es virtual; puede que las instancias de objetos derivados de esta clase no se destruyan correctamente (compilando archivo de origen wind.cpp)
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\skeleton\physicsobject.h(23,40): warning C4100: 't': parámetro formal sin referencia (compilando archivo de origen wind.cpp)
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\skeleton\physicsobject.h(55,31): warning C4100: 't': parámetro formal sin referencia (compilando archivo de origen wind.cpp)
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\skeleton\rigidBody.cpp(24): warning C4172: devolución de dirección de la variable local o temporal
+D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\skeleton\wind.cpp(9): warning C5045: El compilador insertará la mitigación de Spectre para la carga de memoria si se especificó el modificador /Qspectre
+  D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\skeleton\wind.cpp(8) : nota: el intervalo "distance" del índice se comprobó por comparación en esta línea
+  D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\skeleton\wind.cpp(9) : nota: suministra la llamada en esta línea
+  game.vcxproj -> D:\UNI\SIM\SIM\Practica 5\solidosCorregidos\bin\gameDEBUG.exe
